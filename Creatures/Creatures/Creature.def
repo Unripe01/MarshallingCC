@@ -1,0 +1,9 @@
+
+LIBRARY Creatures
+DESCRIPTION "モジュール定義ファイル"
+VERSION 1.0 ; とりあえず適当に
+EXPORTS
+	RedGoblin @1
+	BlueGoblin @2
+	Golem @3
+	Cerberus @4

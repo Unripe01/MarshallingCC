@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Summoner", "Summoner\Summoner.csproj", "{3794A520-2112-4E78-86D9-F4ABA6789088}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Creatures", "Creatures\Creatures\Creatures.vcxproj", "{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3794A520-2112-4E78-86D9-F4ABA6789088}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{3794A520-2112-4E78-86D9-F4ABA6789088}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{3794A520-2112-4E78-86D9-F4ABA6789088}.Debug|Win32.ActiveCfg = Debug|x86
+		{3794A520-2112-4E78-86D9-F4ABA6789088}.Debug|x86.ActiveCfg = Debug|x86
+		{3794A520-2112-4E78-86D9-F4ABA6789088}.Debug|x86.Build.0 = Debug|x86
+		{3794A520-2112-4E78-86D9-F4ABA6789088}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{3794A520-2112-4E78-86D9-F4ABA6789088}.Release|Mixed Platforms.Build.0 = Release|x86
+		{3794A520-2112-4E78-86D9-F4ABA6789088}.Release|Win32.ActiveCfg = Release|x86
+		{3794A520-2112-4E78-86D9-F4ABA6789088}.Release|x86.ActiveCfg = Release|x86
+		{3794A520-2112-4E78-86D9-F4ABA6789088}.Release|x86.Build.0 = Release|x86
+		{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}.Debug|Win32.Build.0 = Debug|Win32
+		{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}.Debug|x86.ActiveCfg = Debug|Win32
+		{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}.Release|Win32.ActiveCfg = Release|Win32
+		{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}.Release|Win32.Build.0 = Release|Win32
+		{D6EB38C1-8BDE-4FD4-94B1-971F7003F21F}.Release|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
