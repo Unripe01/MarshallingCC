@@ -11,7 +11,6 @@ namespace MarshallingCC
 	{
 		//Stopwatch
 		static System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
-		const int count = 100000;
 
 		static void Main( string[] args )
 		{
@@ -28,51 +27,49 @@ namespace MarshallingCC
 			//ゴーレム
 			CastGolem();
 
-			//ケルベロス
-			CastCerberus(true);
+			//Dragon
+			CastDragon(true);
 
-			//ケルベロス（高速詠唱）
+			//Dragon（高速詠唱）
 			Console.WriteLine( "高速詠唱" );
-			FastCastCerberus( true );
+			FastCastDragon( true );
 
-			//ケルベロス10000体の召喚
-			Console.WriteLine( "ケルベロス10000体の召喚" );
+			const int count = 100000;
+			//Dragon10000体の召喚
+			Console.WriteLine( "ドラゴン10000体の召喚" );
 			sw.Start();
 			for( int i = 0; i < count; i++ )
 			{
-				//ケルベロス
-				CastCerberus( false );
+				//Dragon
+				CastDragon( false );
 			}
 			sw.Stop();
 			Console.WriteLine( string.Format( "詠唱時間：{0}", ( (decimal)sw.Elapsed.TotalSeconds ).ToString() ) );
 
-			//ケルベロス10000体の召喚（ポインタ版）
-			Console.WriteLine( "ケルベロス10000体の高速召喚" );
+			//Dragon10000体の召喚（ポインタ版）
+			Console.WriteLine( "ドラゴン10000体の高速召喚" );
 			sw.Restart();
 			for( int i = 0; i < count; i++ )
 			{
-				//ケルベロス
-				FastCastCerberus( false );
+				//Dragon
+				FastCastDragon( false );
 			}
 			sw.Stop();
 			Console.WriteLine( string.Format( "詠唱時間：{0}", ( (decimal)sw.Elapsed.TotalSeconds ).ToString() ) );
-
-
-
 			Console.WriteLine( "" );
 			Console.ReadLine();
 		}
 
 		/// <summary>
-		/// ケルベロス
+		/// Dragon
 		/// </summary>
-		private static unsafe void FastCastCerberus( bool consoleWeite )
+		private static unsafe void FastCastDragon( bool consoleWeite )
 		{
 			StringBuilder csb = new StringBuilder( 1024 );
 			MagicCast.StatusUnsafe[] cerberusHeads = new MagicCast.StatusUnsafe[7];
 			fixed( MagicCast.StatusUnsafe* ptr = cerberusHeads )
 			{
-				MagicCast.CerberusUnsafe( csb, ptr );
+				MagicCast.DragonUnsafe( csb, ptr );
 			}
 
 			if( consoleWeite == false )
@@ -113,13 +110,13 @@ Weakness:{5}
 		}
 
 		/// <summary>
-		/// ケルベロス
+		/// Dragon
 		/// </summary>
-		private static void CastCerberus( bool consoleWeite )
+		private static void CastDragon( bool consoleWeite )
 		{
 			StringBuilder csb = new StringBuilder( 1024 );
 			MagicCast.CerberusHeads cerberusHeads;
-			MagicCast.Cerberus( csb, out cerberusHeads );
+			MagicCast.Dragon( csb, out cerberusHeads );
 
 			if( consoleWeite == false )
 			{

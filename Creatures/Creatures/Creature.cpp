@@ -35,9 +35,9 @@ namespace Creatures
 			return 0;
 		}
 
-		//ケルベロス
-		long Creature::Cerberus(  wchar_t *name,  CerberusHeads *cerberusHeads){
-			wcscpy_s( name, 1024, L"ケルベロス" );
+		//Dragon
+		long Creature::Dragon(  wchar_t *name,  DragonHeads *cerberusHeads){
+			wcscpy_s( name, 1024, L"ドラゴン" );
 
 			for ( int idx = 0 ; idx < 7 ; idx++ ) {
 				cerberusHeads->Header[idx].Hp = ( idx + 1 ) * 1000;

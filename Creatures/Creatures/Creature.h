@@ -16,14 +16,15 @@ namespace Creatures {
 			BYTE	Weakness[7];	//頭・右手・左手・胸・腰・右足・左足 (7b)
 		} Status ;	// total=16b
 
+		//ステータスを７つ保持する構造体
 		typedef struct {
 			Status Header[7];
-		} CerberusHeads;
+		} DragonHeads;
 
 		static long __stdcall RedGoblin(  char **name );
 		static long __stdcall BlueGoblin(  wchar_t *name );
 		static long __stdcall Golem(  wchar_t *name,  Status *lpStatus);
-		static long __stdcall Cerberus(  wchar_t *name,  CerberusHeads *lpStatus);
+		static long __stdcall Dragon(  wchar_t *name,  DragonHeads *lpStatus);
 		
 	};
 }
