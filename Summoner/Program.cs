@@ -5,8 +5,11 @@ using System.Text;
 using System.Runtime.InteropServices;
 
 ///召喚士クラス　クリーチャーを呼び出すとか厨２的な発想でコーディング中
-namespace MarshallingCC
+namespace Summoner
 {
+	/// <summary>
+	/// サモナー
+	/// </summary>
 	class Summoner
 	{
 		//Stopwatch

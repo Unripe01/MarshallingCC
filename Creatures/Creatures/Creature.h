@@ -2,6 +2,7 @@ typedef unsigned char       BYTE;
 typedef unsigned short      WORD;
 typedef long LONG;
 
+//DLLエクスポート用宣言
 #define Creatures_export __declspec(dllexport)
 
 namespace Creatures {
@@ -21,10 +22,13 @@ namespace Creatures {
 			Status Header[7];
 		} DragonHeads;
 
+		//レッドゴブリン
 		static long __stdcall RedGoblin(  char **name );
+		//ブルーゴブリン
 		static long __stdcall BlueGoblin(  wchar_t *name );
+		//ゴーレム
 		static long __stdcall Golem(  wchar_t *name,  Status *lpStatus);
+		//ドラゴン
 		static long __stdcall Dragon(  wchar_t *name,  DragonHeads *lpStatus);
-		
 	};
 }

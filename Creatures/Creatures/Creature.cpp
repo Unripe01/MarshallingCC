@@ -1,8 +1,6 @@
 #include "Creature.h"
 #include <stdexcept>//おまじない的な何か。例外関連が定義されてるようだ
-
-//#include <windows.h> //コンソールアプリには不要だけど、WCHAR使ってみるのでとりあえず
-//#include <tchar.h>//_TCHAR型便利っす。でも今回は使わないっす。
+//#include <tchar.h>//_TCHAR型便利っす。でも今回は使わない。
 
 //__stdcall を付けないと、C#側で扱える宣言なしでエラーになる。
 namespace Creatures

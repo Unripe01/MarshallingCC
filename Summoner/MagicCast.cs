@@ -5,7 +5,7 @@ using System.Text;
 using System.Runtime.InteropServices;//DLL呼び出しに必要
 
 ///詠唱系
-namespace MarshallingCC
+namespace Summoner
 {
 	/// <summary>
 	/// DLL呼び出しラッパークラス

@@ -8,7 +8,7 @@
     <ProjectGuid>{3794A520-2112-4E78-86D9-F4ABA6789088}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MarshallingCC</RootNamespace>
+    <RootNamespace>Summoner</RootNamespace>
     <AssemblyName>MarshallingCC</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
