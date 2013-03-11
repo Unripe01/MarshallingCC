@@ -34,13 +34,13 @@ namespace Summoner
 		public static extern int Golem( [MarshalAs( UnmanagedType.LPWStr )]StringBuilder str, [Out] out Status status );
 
 		/// <summary>
-		/// Dragonの召喚
+		/// ドラゴンの召喚
 		/// </summary>
 		[DllImport( "Creatures.dll", EntryPoint="Dragon", CharSet=CharSet.Unicode )]
 		public static extern int Dragon( [MarshalAs( UnmanagedType.LPWStr )]StringBuilder str, [Out] out CerberusHeads status );
 
 		/// <summary>
-		/// Dragonの召喚
+		/// ドラゴンの召喚
 		/// </summary>
 		[DllImport( "Creatures.dll", EntryPoint="Dragon", CharSet=CharSet.Unicode )]
 		public static extern unsafe int DragonUnsafe( [MarshalAs( UnmanagedType.LPWStr )]StringBuilder str, StatusUnsafe* pointer );

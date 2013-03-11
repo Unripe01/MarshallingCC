@@ -30,26 +30,27 @@ namespace Summoner
 			//ゴーレム
 			CastGolem();
 
-			//Dragon
+			//ドラゴン
 			CastDragon(true);
 
-			//Dragon（高速詠唱）
+			//ドラゴン（高速詠唱）
 			Console.WriteLine( "高速詠唱" );
 			FastCastDragon( true );
 
 			const int count = 100000;
-			//Dragon10000体の召喚
+			//ドラゴン10000体の召喚
 			Console.WriteLine( "ドラゴン10000体の召喚" );
 			sw.Start();
 			for( int i = 0; i < count; i++ )
 			{
-				//Dragon
+				//ドラゴン
 				CastDragon( false );
 			}
 			sw.Stop();
 			Console.WriteLine( string.Format( "詠唱時間：{0}", ( (decimal)sw.Elapsed.TotalSeconds ).ToString() ) );
 
-			//Dragon10000体の召喚（ポインタ版）
+			//ドラゴン10000体の召喚（ポインタ版）
+			Console.WriteLine( "" );
 			Console.WriteLine( "ドラゴン10000体の高速召喚" );
 			sw.Restart();
 			for( int i = 0; i < count; i++ )

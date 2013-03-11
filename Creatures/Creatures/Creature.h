@@ -1,6 +1,4 @@
 typedef unsigned char       BYTE;
-typedef unsigned short      WORD;
-typedef long LONG;
 
 //DLLエクスポート用宣言
 #define Creatures_export __declspec(dllexport)
