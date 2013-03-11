@@ -114,13 +114,16 @@ Weakness:{5}
 		}
 
 		/// <summary>
-		/// Dragon
+		/// ドラゴン
 		/// </summary>
 		private static void CastDragon( bool consoleWeite )
 		{
+			//引渡し用のStringBuilder（サイズ指定）
 			StringBuilder csb = new StringBuilder( 1024 );
-			MagicCast.CerberusHeads cerberusHeads;
-			MagicCast.Dragon( csb, out cerberusHeads );
+			//引数宣言
+			MagicCast.DragonHeads dragonHeads;
+			//呼び出し
+			MagicCast.Dragon( csb, out dragonHeads );
 
 			if( consoleWeite == false )
 			{
@@ -131,7 +134,7 @@ Weakness:{5}
 			for( int idx = 0; idx < 7; idx++ )
 			{
 				string sWeakness = "";
-				foreach( byte b in cerberusHeads.head[idx].Weakness )
+				foreach( byte b in dragonHeads.head[idx].Weakness )
 				{
 					sWeakness += b.ToString();
 				}
@@ -144,9 +147,9 @@ Weakness:{5}
 "
 		, idx+1
 		, csb.ToString()
-		 , cerberusHeads.head[idx].Hp.ToString()
-		 , cerberusHeads.head[idx].Power.ToString()
-		 , cerberusHeads.head[idx].Sex.ToString()
+		 , dragonHeads.head[idx].Hp.ToString()
+		 , dragonHeads.head[idx].Power.ToString()
+		 , dragonHeads.head[idx].Sex.ToString()
 		 , sWeakness
 		 ) );
 				}

@@ -37,7 +37,7 @@ namespace Summoner
 		/// ドラゴンの召喚
 		/// </summary>
 		[DllImport( "Creatures.dll", EntryPoint="Dragon", CharSet=CharSet.Unicode )]
-		public static extern int Dragon( [MarshalAs( UnmanagedType.LPWStr )]StringBuilder str, [Out] out CerberusHeads status );
+		public static extern int Dragon( [MarshalAs( UnmanagedType.LPWStr )]StringBuilder str, [Out] out DragonHeads status );
 
 		/// <summary>
 		/// ドラゴンの召喚
@@ -46,10 +46,10 @@ namespace Summoner
 		public static extern unsafe int DragonUnsafe( [MarshalAs( UnmanagedType.LPWStr )]StringBuilder str, StatusUnsafe* pointer );
 
 		/// <summary>
-		/// Dragon ステータス構造体
+		/// ドラゴンステータス構造体
 		/// </summary>
 		[StructLayout( LayoutKind.Sequential )]
-		public struct CerberusHeads
+		public struct DragonHeads
 		{
 			[MarshalAs( UnmanagedType.ByValArray, SizeConst=128 )]
 			public Status[] head; //16b* 7
