@@ -65,7 +65,7 @@ namespace Summoner
 		}
 
 		/// <summary>
-		/// Dragon
+		/// ドラゴンの高速詠唱
 		/// </summary>
 		private static unsafe void FastCastDragon( bool consoleWeite )
 		{
